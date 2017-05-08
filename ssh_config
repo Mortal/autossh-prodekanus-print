@@ -13,4 +13,5 @@ IdentityFile ~/.ssh/id_rsa_elrond_port
 HostName elrond.math.au.dk
 ControlMaster auto
 ControlPath ~/.ssh/elrond-port-forward.sock
+# TODO this should be a UNIX socket for access control
 RemoteForward 6631 127.0.0.1:631
