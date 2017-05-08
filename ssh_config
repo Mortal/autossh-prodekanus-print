@@ -1,0 +1,7 @@
+Host prodekanus-port-forward
+ServerAliveInterval 60
+IdentityFile ~/.ssh/id_rsa_prodekanus_port
+HostName 10.29.0.39
+ControlMaster auto
+ControlPath ~/.ssh/prodekanus-port-forward.sock
+RemoteForward 6631 127.0.0.1:631
