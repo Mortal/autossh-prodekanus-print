@@ -1,0 +1,15 @@
+[Unit]
+Description=Tunnel from elrond to local CUPS
+After=network.target
+After=org.cups.cupsd.service
+
+[Service]
+ExecStart=/home/rav/bin/autossh-elrond-print
+Restart=on-failure
+User=rav
+KillSignal=SIGINT
+SendSIGKILL=no
+Environment=AUTOSSH_GATETIME=0
+
+[Install]
+WantedBy=multi-user.target

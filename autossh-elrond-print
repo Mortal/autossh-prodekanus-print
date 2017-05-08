@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /home/rav/.ssh
+autossh -M 21234 -N -i id_rsa_elrond_port elrond-port-forward

@@ -5,3 +5,12 @@ HostName 10.29.0.39
 ControlMaster auto
 ControlPath ~/.ssh/prodekanus-port-forward.sock
 RemoteForward 6631 127.0.0.1:631
+
+Host elrond-port-forward
+User tutor
+ServerAliveInterval 60
+IdentityFile ~/.ssh/id_rsa_elrond_port
+HostName elrond.math.au.dk
+ControlMaster auto
+ControlPath ~/.ssh/elrond-port-forward.sock
+RemoteForward 6631 127.0.0.1:631
